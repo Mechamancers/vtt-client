@@ -1,9 +1,11 @@
 # Style Documentation
 
 ## Fonts
-**Title** Julius One Sans
-**Menu** Oswald, or Bebas Neue
-**Standard** Lato
+| Font | Use |
+| ----------- | ----------- | ----------- |
+| Julius One Sans | Title |
+| Oswald, or Bebas Neue | Menus, Buttons |
+| Lato | Standard text |
 
 ## Colors
 | Color | Hex | Use | 
