@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import Home from './containers/Home.tsx'
-import './index.css'
+import './style/index.css'
 import {
   createBrowserRouter,
   createRoutesFromElements,
