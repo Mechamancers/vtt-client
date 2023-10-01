@@ -30,4 +30,4 @@ Style Rules to define:
 - [ ] Border-Radius 
 - [ ] Buttons
 
-[Shared Notes](https://docs.google.com/document/d/19f1V-gLrEqGTnL8OgqO3Ad3fyC7FYeb7KmGXi9YjGo4/edit?usp=sharing)
+View [Shared Notes](https://docs.google.com/document/d/19f1V-gLrEqGTnL8OgqO3Ad3fyC7FYeb7KmGXi9YjGo4/edit?usp=sharing)
