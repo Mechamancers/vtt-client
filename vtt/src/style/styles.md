@@ -2,7 +2,7 @@
 
 ## Fonts
 | Font | Use |
-| ----------- | ----------- | ----------- |
+| ----------- | ----------- | 
 | Julius One Sans | Title |
 | Oswald, or Bebas Neue | Menus, Buttons |
 | Lato | Standard text |
