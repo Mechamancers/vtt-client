@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Home=() => {
     return (
         <div className='h-[100svh] w-[100svw] bg-blackish flex items-center justify-center'>
@@ -9,8 +11,12 @@ const Home=() => {
                 {/* Headig - Secondary */}
                 <span className='block font-title text-3xl mt-2 text-center text-platinum'>
                     Intuitive Tabletop</span>
-                {/* Authentication Button (Google) - Opens Modal */}
-                <button className='mt-8 bg-white'>Sign In / Sign Up</button>
+               
+                {/* Redirect to login route - Authentication Button (Google) */}
+                <div className="flex text-white justify-around w-40 mx-auto mt-4">
+                    <Link to="/login" className="cursor-pointer">Sign In</Link>
+                    <Link to="/login" className="cursor-pointer">Sign Up</Link>
+                </div>
             </header>
         </div>
     )
