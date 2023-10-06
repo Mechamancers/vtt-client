@@ -13,6 +13,7 @@ export default {
       colors: {
         'blackish': '#010409',
         'rich-black': '#1E1E1E',
+        'rich-hover': '#313131',
         'xanthous': '#EAB308',
         'fire-engine': '#CC1923',
         'aero': '#58C0E4',

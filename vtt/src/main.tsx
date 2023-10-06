@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import NotFound from './components/NotFound.tsx'
 import Home from './containers/Home.tsx'
-
-import Home2 from './containers/Home2.tsx'
-
 import Login from './containers/Login.tsx'
+
+// Will be conditionally rendered on Home if user logged in
+import Overview from './components/Overview.tsx'
+
 import './style/index.css'
 import {
   createBrowserRouter,
@@ -23,7 +24,7 @@ const router = createBrowserRouter(
       <Route path='/login' element={<Login />}></Route>
 
       {/* Temporary Route until OAuth works */}
-      <Route path='/home' element={<Home2 />}></Route>
+      <Route path='/home' element={<Overview />}></Route>
 
     </Route>
   )
