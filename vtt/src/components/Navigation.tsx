@@ -54,7 +54,7 @@ const Navigation=() => {
                 {navUpper.map((navObj) => {
                     return(
                         <Link to={navObj.path} key={navObj.id} 
-                            className='flex justify-start mb-2 nav-icons'>
+                            className='nav-link'>
                             <span className='p-2 pl-6'>{navObj.icon}</span> 
                             <span className='p-2 text-xl'>{navObj.label}</span>
                         </Link>
@@ -67,7 +67,7 @@ const Navigation=() => {
                 {navLower.map((navObj) => {
                     return(
                         <Link to={navObj.path} key={navObj.id} 
-                            className='flex justify-start mb-2 nav-icons'>
+                            className='nav-link'>
                             <span className='p-2 pl-6'>{navObj.icon}</span> 
                             <span className='p-2 text-xl'>{navObj.label}</span>
                         </Link>
