@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+import NotFound from './components/NotFound.tsx'
 import Home from './containers/Home.tsx'
 import './style/index.css'
 import {
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route path='/' element={<Home />}></Route>
+      <Route path='*' element={<NotFound />}></Route>
     </Route>
   )
 )
