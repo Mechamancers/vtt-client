@@ -7,7 +7,8 @@ export default {
     extend: {
       fontFamily: {
         'title': ['"Julius Sans One"'],
-        'sans': ["Lato"]
+        'sans': ["Lato"],
+        'google': ["Poppins"]
       },
       colors: {
         'blackish': '#010409',
@@ -16,7 +17,8 @@ export default {
         'fire-engine': '#CC1923',
         'aero': '#58C0E4',
         'cadet-grey': '#A3A9B2',
-        'platinum': '#DFE3E7' 
+        'platinum': '#DFE3E7',
+        'google': '#4397f7'
       }
     },
   },
