@@ -13,9 +13,9 @@ const Home=() => {
                     Intuitive Tabletop</span>
                
                 {/* Redirect to login route - Authentication Button (Google) */}
-                <div className="flex text-white justify-around w-40 mx-auto mt-4">
-                    <Link to="/login" className="cursor-pointer">Sign In</Link>
-                    <Link to="/login" className="cursor-pointer">Sign Up</Link>
+                <div className='flex text-white justify-around w-40 mx-auto mt-4'>
+                    <Link to='/login' className='cursor-pointer'>Sign In</Link>
+                    <Link to='/login' className='cursor-pointer'>Sign Up</Link>
                 </div>
             </header>
         </div>

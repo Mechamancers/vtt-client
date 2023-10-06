@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'title': ['"Julius Sans One"']
+        'title': ['"Julius Sans One"'],
+        'sans': ["Lato"]
       },
       colors: {
         'blackish': '#010409',
