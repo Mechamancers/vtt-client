@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navigation Buttons & Icons */
 .nav-link {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 0.5rem;
     margin: 0 .5rem;
     border-radius: 10px;
     transition: all .15s;
+}
+
+.nav-link:not(:last-child) {
+    margin-bottom: .75rem;
+}
+
+.nav-link:last-child {
+    margin-bottom: 1rem;
 }
 
 .nav-link:hover {
