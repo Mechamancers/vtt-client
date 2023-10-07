@@ -6,12 +6,11 @@ const Overview=() => {
     const user = {
         id: 1,
         name: 'Drewford',
+        avatar: 'https://i.imgur.com/SGTvQJ7.png',
         pronouns: 'He/Him',
         timezone: 'CST',
         status: 'Why did nobody trust the low dex wizard? Because he cantrip at any moment'
     }
-
-    const profileIcon = 'https://i.imgur.com/SGTvQJ7.png'
 
     const dummyGameData = [
         {
@@ -86,9 +85,9 @@ const Overview=() => {
                             <span className='block font-title text-3xl mb-4 border-b-2 border-platinum'>Profile</span>
                             <div className='flex px-8'>
                                 {/* Profile Icon */}
-                                <div className='w-[12rem]'>
-                                    <img src={profileIcon} />
-                                </div>
+                                <Link to='/profile' className='w-[12rem] rounded-full'>
+                                    <img src={user.avatar} />
+                                </Link>
                                 {/* Profile Description */}
                                 <div className='p-4 w-[20rem]'>
                                     <span className='block text-2xl'>{user.name}</span>
