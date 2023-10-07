@@ -58,7 +58,7 @@ const Overview=() => {
 
                     {/* Games - Left Column */}
                     <div className='bg-rich-black rounded-md m-4 mr-2 p-4 w-[33rem]'>
-                        <span className='block font-title text-3xl mb-4 border-b-2 border-platinum'>Games</span>
+                        <Link to='/games' className='block font-title text-3xl mb-4 border-b-2 border-platinum'>Games</Link>
                         {/* Game Cards */}
                         {dummyGameData.map((gameObj) => {
                             return (
@@ -82,10 +82,10 @@ const Overview=() => {
 
                         {/* Profile - Top Quarter */}
                         <div className='bg-rich-black rounded-md m-4 mb-2 p-4'>
-                            <span className='block font-title text-3xl mb-4 border-b-2 border-platinum'>Profile</span>
+                            <Link to='/account' className='block font-title text-3xl mb-4 border-b-2 border-platinum'>Profile</Link>
                             <div className='flex px-8'>
                                 {/* Profile Icon */}
-                                <Link to='/profile' className='w-[12rem] rounded-full'>
+                                <Link to='/account' className='w-[12rem] rounded-full'>
                                     <img src={user.avatar} />
                                 </Link>
                                 {/* Profile Description */}
@@ -101,7 +101,7 @@ const Overview=() => {
 
                         {/* File Explorer - Bottom Quarter */}
                         <div className='bg-rich-black rounded-md m-4 p-4'>
-                            <span className='block font-title text-3xl mb-4 border-b-2 border-platinum'>File Explorer</span>
+                            <Link to='/files' className='block font-title text-3xl mb-4 border-b-2 border-platinum'>File Explorer</Link>
                         </div>
 
                     </div>
