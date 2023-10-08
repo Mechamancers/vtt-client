@@ -46,7 +46,7 @@ const Overview=() => {
     return (
         <div className='bg-blackish text-platinum h-[100svh] w-[100svw] flex'>
             {/* JUSTIFY CENTER WHEN NAVIGATION MOVES TO THE RIGHT PLACE */}
-
+            {/* Do not render Navigation here. It is ruining Flexbox */}
             <Navigation />
 
             {/* Greeing - Contains bento */}
