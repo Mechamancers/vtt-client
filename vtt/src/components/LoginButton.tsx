@@ -1,9 +1,16 @@
 import { useGoogleLogin } from '@react-oauth/google'
+import { useNavigate } from 'react-router-dom'
 import { BsGoogle } from 'react-icons/bs'
 
 const LoginButton=() =>{
+
+    const navigate = useNavigate()
+
     const login=useGoogleLogin({
-        onSuccess: tokenResponse => console.log(tokenResponse),
+        onSuccess: tokenResponse => { 
+            console.log(tokenResponse)
+            navigate('/') 
+        }
     });
 
     return (

@@ -1,11 +1,26 @@
-import { GoogleOAuthProvider } from '@react-oauth/google'
 import { Outlet } from 'react-router-dom'
+// import * as Google from '@react-oauth/google'
+
+import Navigation from './components/Navigation'
 
 function App() {
+
+  const isLoggedIn = true
+
+  // Game - Outlet Context
+  if (location.pathname.startsWith('/game')) {
+    return (
+        <Outlet />
+    ) 
+  }
+
+  // Site - Outlet Context (w/ Navigation)
   return (
-    <GoogleOAuthProvider clientId='563486037747-jcp30jsmnj5a72e633bquibgsnfsp1lg.apps.googleusercontent.com'>
-      <Outlet />
-    </GoogleOAuthProvider>
+      <div className='flex'>
+        {/* Navigation = hidden when !isLoggedIn */}
+        {isLoggedIn && <Navigation /> }
+        <Outlet />
+      </div>
   )
 }
 

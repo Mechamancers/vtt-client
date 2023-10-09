@@ -44,10 +44,10 @@ const Overview=() => {
     ]
 
     return (
-        <div className='bg-blackish text-platinum h-[100svh] w-[100svw] flex'>
+        <div className='bg-blackish text-platinum h-[100svh] w-[100svw] flex justify-center'>
             {/* JUSTIFY CENTER WHEN NAVIGATION MOVES TO THE RIGHT PLACE */}
             {/* Do not render Navigation here. It is ruining Flexbox */}
-            <Navigation />
+            {/* <Navigation /> */}
 
             {/* Greeing - Contains bento */}
             <div>

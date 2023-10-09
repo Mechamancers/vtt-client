@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+
+// SVGs - React Icons
 import { GiMagicPortal } from 'react-icons/gi'
 import { RiPagesLine } from 'react-icons/ri'
 import { PiGameController } from 'react-icons/pi'
@@ -44,7 +46,7 @@ const Navigation=() => {
     ]
 
     return (
-        <div className='bg-rich-black w-[15rem] h-[100svh] flex flex-col justify-between'>
+        <div className='bg-rich-black text-platinum w-[15rem] h-[100svh] flex flex-col justify-between'>
 
             {/* Nav-Upper: Overview, Games, File Explorer */}
             <div className='flex flex-col'>
