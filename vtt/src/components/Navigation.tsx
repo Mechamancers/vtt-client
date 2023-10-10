@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // SVGs - React Icons
@@ -8,6 +9,7 @@ import { LuFiles, LuUserCircle } from 'react-icons/lu'
 import { BsGear } from 'react-icons/bs'
 
 const Navigation=() => {
+    const [navOpen, setNavOpen] = useState(false);
 
     const navUpper = [
         {
@@ -46,7 +48,15 @@ const Navigation=() => {
     ]
 
     return (
-        <div className='bg-rich-black text-platinum w-[15rem] h-[100svh] flex flex-col justify-between'>
+        <div className={`bg-rich-black text-platinum w-[15rem] h-[100svh] relative flex flex-col justify-between transition duration-300
+            ${navOpen ? 'translate-x-0' : 'translate-x-[-100%]' } md:translate-x-0`}>
+
+            {/* Button: Toggle Navigation Visibility */}
+            <div
+                onClick={()=>{setNavOpen(!navOpen)}} 
+                className=' md:hidden absolute end-[-3.5rem] top-[1rem] z-20 cursor-pointer rounded-r-md bg-rich-black h-[3.5rem] w-[3.5rem] flex justify-center items-center'>
+                {navOpen ? 'X' : 'O'}
+            </div>
 
             {/* Nav-Upper: Overview, Games, File Explorer */}
             <div className='flex flex-col'>
