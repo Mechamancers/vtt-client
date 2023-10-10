@@ -16,7 +16,7 @@ function App() {
 
   // Site - Outlet Context (w/ Navigation)
   return (
-      <div className='flex'>
+      <div className='bg-blackish flex'>
         {/* Navigation = hidden when !isLoggedIn */}
         {isLoggedIn && <Navigation /> }
         <Outlet />

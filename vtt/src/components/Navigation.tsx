@@ -7,6 +7,8 @@ import { RiPagesLine } from 'react-icons/ri'
 import { PiGameController } from 'react-icons/pi'
 import { LuFiles, LuUserCircle } from 'react-icons/lu'
 import { BsGear } from 'react-icons/bs'
+import { HiMenuAlt1 } from 'react-icons/hi'
+import { AiOutlineClose } from 'react-icons/ai'
 
 const Navigation=() => {
     const [navOpen, setNavOpen] = useState(false);
@@ -48,14 +50,14 @@ const Navigation=() => {
     ]
 
     return (
-        <div className={`bg-rich-black text-platinum w-[15rem] h-[100svh] relative flex flex-col justify-between transition duration-300
+        <div className={`bg-rich-black text-platinum min-w-[15rem] h-[100svh] relative flex flex-col justify-between transition duration-300
             ${navOpen ? 'translate-x-0' : 'translate-x-[-100%]' } md:translate-x-0`}>
 
             {/* Button: Toggle Navigation Visibility */}
             <div
                 onClick={()=>{setNavOpen(!navOpen)}} 
-                className=' md:hidden absolute end-[-3.5rem] top-[1rem] z-20 cursor-pointer rounded-r-md bg-rich-black h-[3.5rem] w-[3.5rem] flex justify-center items-center'>
-                {navOpen ? 'X' : 'O'}
+                className='md:hidden absolute end-[-3.5rem] top-[1rem] z-20 cursor-pointer rounded-r-md bg-rich-black text-platinum h-[3.5rem] w-[3.5rem] flex justify-center items-center'>
+                <span className='block text-[2rem]'>{navOpen ? <AiOutlineClose /> : <HiMenuAlt1 />}</span>
             </div>
 
             {/* Nav-Upper: Overview, Games, File Explorer */}
