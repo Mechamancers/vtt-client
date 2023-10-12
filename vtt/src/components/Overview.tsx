@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Navigation from "./Navigation";
 
 const Overview=() => {
 
@@ -44,20 +43,18 @@ const Overview=() => {
     ]
 
     return (
-        <div className='bg-blackish text-platinum h-[100svh] w-[100svw] flex justify-center'>
-            {/* JUSTIFY CENTER WHEN NAVIGATION MOVES TO THE RIGHT PLACE */}
-            {/* Do not render Navigation here. It is ruining Flexbox */}
-            {/* <Navigation /> */}
+        <div className='bg-blackish text-platinum h-[100svh] w-[100svw] overflow-y-scroll flex justify-center'>
 
-            {/* Greeing - Contains bento */}
+            {/* Main Container */}
             <div>
+                {/* Greeting */}
                 <span className='block m-8 mb-6 text-4xl font-title'>Welcome, {user.name}</span>
 
                 {/* Overview - Bento */}
-                <div className='flex mx-auto my-0'>
+                <div className='flex flex-col lg:flex-row mx-auto my-0'>
 
-                    {/* Games - Left Column */}
-                    <div className='bg-rich-black rounded-md m-4 mr-2 p-4 w-[33rem]'>
+                    {/* Games - Left Column / Top Row (Mobile) */}
+                    <div className='bg-rich-black rounded-md mx-auto lg:m-4 lgmr-2 p-4 w-[33rem]'>
                         <Link to='/games' className='block font-title text-3xl mb-4 border-b-2 border-platinum'>Games</Link>
                         {/* Game Cards */}
                         {dummyGameData.map((gameObj) => {
@@ -77,7 +74,7 @@ const Overview=() => {
                         })}
                     </div>
 
-                    {/* Profile & File Explorer - Right Column */}
+                    {/* Profile & File Explorer - Right Column / Lower Rows (Mobile) */}
                     <div className='w-30rem'>
 
                         {/* Profile - Top Quarter */}

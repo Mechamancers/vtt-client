@@ -50,15 +50,17 @@ const Navigation=() => {
     ]
 
     return (
-        <div className={`bg-rich-black text-platinum min-w-[15rem] h-[100svh] relative flex flex-col justify-between transition duration-300
-            ${navOpen ? 'translate-x-0' : 'translate-x-[-100%]' } md:translate-x-0`}>
+        <div className={`bg-rich-black text-platinum lg:min-w-[15rem] h-[100svh] relative flex flex-col justify-between transition duration-300
+            ${navOpen ? 'translate-x-0 min-w-[15rem]' : 'translate-x-[-100%] ' } lg:translate-x-0`}>
 
             {/* Button: Toggle Navigation Visibility */}
             <div
                 onClick={()=>{setNavOpen(!navOpen)}} 
-                className='md:hidden absolute end-[-3.5rem] top-[1rem] z-20 cursor-pointer rounded-r-md bg-rich-black text-platinum h-[3.5rem] w-[3.5rem] flex justify-center items-center'>
+                className='lg:hidden absolute end-[-3.5rem] top-[1rem] z-20 cursor-pointer rounded-r-md bg-rich-black text-platinum h-[3.5rem] w-[3.5rem] flex justify-center items-center'>
                 <span className='block text-[2rem]'>{navOpen ? <AiOutlineClose /> : <HiMenuAlt1 />}</span>
             </div>
+
+            
 
             {/* Nav-Upper: Overview, Games, File Explorer */}
             <div className='flex flex-col'>
@@ -74,7 +76,8 @@ const Navigation=() => {
                         </Link>
                     )
                 })}
-            </div>
+            </div> 
+            
 
             {/* Nav-Lower: Account, Settings */}
             <div className='flex flex-col mb-4'>
@@ -87,7 +90,8 @@ const Navigation=() => {
                         </Link>
                     )
                 })}
-            </div>
+            </div> 
+
         </div>
     )
 }

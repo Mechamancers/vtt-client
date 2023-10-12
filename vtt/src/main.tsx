@@ -6,6 +6,7 @@ import App from './App.tsx'
 import NotFound from './components/NotFound.tsx'
 import Home from './containers/Home.tsx'
 import Login from './containers/Login.tsx'
+import Games from './containers/Games.tsx'
 
 // Will be conditionally rendered on Home if user logged in
 import Overview from './components/Overview.tsx'
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path='*' element={<NotFound />}></Route>
       <Route path='/' element={<Home />}></Route>
       <Route path='/login' element={<Login />}></Route>
+      <Route path='/games' element={<Games />}></Route>
 
       {/* Temporary Route until OAuth works */}
       <Route path='/home' element={<Overview />}></Route>

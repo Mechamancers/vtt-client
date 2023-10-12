@@ -8,7 +8,7 @@ function App() {
   const isLoggedIn = true
 
   // Game - Outlet Context
-  if (location.pathname.startsWith('/game')) {
+  if (location.pathname.startsWith('/game-id')) {
     return (
         <Outlet />
     ) 
@@ -17,7 +17,6 @@ function App() {
   // Site - Outlet Context (w/ Navigation)
   return (
       <div className='bg-blackish flex'>
-        {/* Navigation = hidden when !isLoggedIn */}
         {isLoggedIn && <Navigation /> }
         <Outlet />
       </div>
