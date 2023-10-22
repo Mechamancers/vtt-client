@@ -46,7 +46,7 @@ const Overview=() => {
         <div className='bg-blackish text-platinum h-[100svh] w-[100svw] overflow-y-scroll flex justify-center'>
 
             {/* Main Container */}
-            <div>
+            <div className='w-[80rem]'>
                 {/* Greeting */}
                 <span className='block m-8 mb-6 text-4xl font-title'>Welcome, {user.name}</span>
 

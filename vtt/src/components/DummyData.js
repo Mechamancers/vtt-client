@@ -154,7 +154,46 @@ const dummyGameData = [
                 tag: 'Role-Play Heavy'
             }
         ]
-    }
+    },
+    {
+        id: 5,
+        name: 'Plight of the Sunseekers',
+        host: 'Drewford',
+        img: 'https://i.imgur.com/VP9HxsY.png',
+        lastPlayed: 'Oct. 5, 2023',
+        players: [
+            {
+                id: 1,
+                img: 'https://i.imgur.com/SGTvQJ7.png'
+            },
+            {
+                id: 2,
+                img: 'https://i.imgur.com/UY59jR9.png'
+            },
+            {
+                id: 3,
+                img: 'https://i.imgur.com/SGTvQJ7.png'
+            },
+            {
+                id: 4,
+                img: 'https://i.imgur.com/UY59jR9.png'
+            } 
+        ],
+        tags: [
+            {
+                id: 1,
+                tag: 'Fun'
+            },
+            {
+                id: 2, 
+                tag: 'Scary'
+            },
+            {
+                id: 3,
+                tag: 'Role-Play Heavy'
+            }
+        ]
+    },
 ]
 
 export default dummyGameData

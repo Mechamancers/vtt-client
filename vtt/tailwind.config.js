@@ -18,7 +18,7 @@ export default {
         'xanthous': '#EAB308',
         'fire-engine': '#CC1923',
         'aero': '#58C0E4',
-        'aero-dark': '#3FA5C7',
+        'aero-dark': '#3D9ABA',
         'cadet-grey': '#A3A9B2',
         'cadet-grey-dark': '#85888C',
         'platinum': '#DFE3E7',
