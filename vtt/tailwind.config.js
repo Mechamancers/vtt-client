@@ -20,6 +20,7 @@ export default {
         'aero': '#58C0E4',
         'aero-dark': '#3FA5C7',
         'cadet-grey': '#A3A9B2',
+        'cadet-grey-dark': '#85888C',
         'platinum': '#DFE3E7',
         'google': '#4397f7'
       }
