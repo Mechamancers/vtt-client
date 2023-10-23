@@ -5,7 +5,7 @@ import { BsFillTagsFill } from 'react-icons/bs'
 
  const Games=() => {
 
-    const tags = ['Fun', 'Scary', 'Role-Playing Heavy']
+    const tags = ['Fun', 'Scary', 'Role-Playing Heavy', 'Friendly']
 
     return (
         <div className='bg-blackish text-platinum h-[100svh] w-[100svw] overflow-y-scroll flex justify-center'>
